@@ -18,7 +18,7 @@
           </b-form-group>
           <div slot="modal-footer" class="w-100">
             <b-btn class="float-right" type="submit" variant="primary">Login</b-btn>
-            <b-btn class="float-right" @click="onHide">Cancel</b-btn>
+            <b-btn class="float-right" variant="none" @click="onHide">Cancel</b-btn>
           </div>
         </b-form>
       </b-modal>
@@ -26,22 +26,6 @@
     </b-nav>
   </b-navbar>
 </template>
-
-<style>
-.nav-link {
-  color: inherit;
-  position: relative;
-}
-  
-.nav-link.active:after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 10px;
-  right: 10px;
-  border-bottom: 4px solid var(--primary);
-}
-</style>
 
 <script>
 export default {

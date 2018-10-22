@@ -1,6 +1,6 @@
 # test-project
 
-> A Vue.js project
+Play with it in a [sandbox](https://codesandbox.io/s/github/konsumer/vue-ideas).
 
 ## Build Setup
 

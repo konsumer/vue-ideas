@@ -1,11 +1,11 @@
 <template>
-  <b-container class="content">
+  <b-container class="Content">
     <slot />
   </b-container>
 </template>
 
 <style>
-.content {
-  margin-top: 10px;
+.Content {
+  margin-top: 1em;
 }
 </style>

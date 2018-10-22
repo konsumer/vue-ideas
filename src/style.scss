@@ -1,0 +1,140 @@
+// build custom bootstrap
+
+@import "~bootstrap-material-design/scss/variables";
+@import "~bootstrap-material-design/scss/mixins";
+
+$theme-colors: (
+  "primary": #2196f3,
+  "secondary": #44C048,
+  "tertiary": #EDD342
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+// @import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+// @import "~bootstrap/scss/dropdown";
+// @import "~bootstrap/scss/button-group";
+// @import "~bootstrap/scss/input-group";
+// @import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+// @import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/breadcrumb";
+// @import "~bootstrap/scss/pagination";
+// @import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+// @import "~bootstrap/scss/media";
+// @import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+// @import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+// @import "~bootstrap/scss/print";
+
+@import "~bootstrap-material-design/scss/reboot";
+
+@import "~bootstrap-material-design/scss/layout";
+@import "~bootstrap-material-design/scss/buttons";
+@import "~bootstrap-material-design/scss/checkboxes";
+@import "~bootstrap-material-design/scss/custom-forms";
+@import "~bootstrap-material-design/scss/switches";
+@import "~bootstrap-material-design/scss/radios";
+@import "~bootstrap-material-design/scss/forms";
+@import "~bootstrap-material-design/scss/input-group";
+@import "~bootstrap-material-design/scss/list-group";
+@import "~bootstrap-material-design/scss/tables";
+@import "~bootstrap-material-design/scss/nav";
+@import "~bootstrap-material-design/scss/navbar";
+@import "~bootstrap-material-design/scss/alerts";
+@import "~bootstrap-material-design/scss/progress";
+@import "~bootstrap-material-design/scss/pagination";
+@import "~bootstrap-material-design/scss/type";
+@import "~bootstrap-material-design/scss/tooltip";
+@import "~bootstrap-material-design/scss/popover";
+@import "~bootstrap-material-design/scss/cards";
+@import "~bootstrap-material-design/scss/modal";
+@import "~bootstrap-material-design/scss/dropdown";
+@import "~bootstrap-material-design/scss/drawer";
+@import "~bootstrap-material-design/scss/themes";
+
+@import "~bootstrap-material-design/scss/ripples";
+
+@import "~bootstrap-material-design/scss/extensions";
+
+.jumbotron {
+  margin-bottom: 0;
+  border-radius: 0;
+  text-align: center;
+  background-size: cover;
+  text-shadow: 1px 1px 4px #333;
+  line-height: 1em;
+
+  h1 {
+    font-size: 120px;
+    font-weight: 600;
+  }
+
+  .lead {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.fade-enter-active {
+  transition: all .3s ease;
+}
+.fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.fade-enter, .fade-leave-to {
+  transform: translateY(10px);
+}
+
+.snackbar-holder {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  z-index: 10000;
+  width: 50vw;
+
+  p {
+    margin: 0;
+  }
+}
+
+.alert {
+  animation-duration: 0.25s;
+  opacity: 1!important;
+}
+
+.nav-link {
+  color: inherit;
+  position: relative;
+}
+  
+.nav-link.active:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 10px;
+  right: 10px;
+  border-bottom: 4px solid theme-color("primary");
+}
+
+.modal-background {
+  background-color: rgba(0,0,0, 0.4)!important;
+}

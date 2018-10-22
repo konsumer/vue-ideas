@@ -3,8 +3,7 @@ import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import VueAlert from '@vuejs-pt/vue-alert'
 
-import './theme.css'
-
+import './style.scss'
 import App from './components/App'
 
 Vue.use(VueRouter)
